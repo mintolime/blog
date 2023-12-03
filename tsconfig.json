@@ -19,6 +19,10 @@
     // console.log(Moment);
     // c флагом результат [object Object]
     // console.log(Moment);
+    "baseUrl": ".",
+    "paths": {
+      "*":["./src/*"]
+    },
     "esModuleInterop": true,
     // Если какая-либо библиотека не имеет default import,
     // лоадеры вроде ts-loader или babel-loader автоматически создают их
