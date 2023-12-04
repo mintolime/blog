@@ -9,6 +9,5 @@ render(
       <App />
     </ThemeContextProvider>
   </BrowserRouter>,
-
   document.getElementById('root'),
 );
