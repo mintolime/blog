@@ -1,0 +1,13 @@
+.Button{
+  cursor: pointer;
+  border: none;
+}
+.clear{
+  padding: 0;
+  background: none;
+}
+
+.theme-switcher{
+  background: var(--inverted-btn-color);
+  border-radius: 10px;
+}

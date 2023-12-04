@@ -3,6 +3,7 @@
 @import './themes/normal.scss';
 
 .app {
+  width: 100%;
   font: var(--font-m);
   background: var(--bg-color);
   color: var(--primary-color);
