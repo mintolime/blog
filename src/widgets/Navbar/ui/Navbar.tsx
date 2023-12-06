@@ -5,8 +5,6 @@ interface NavBarProps {
   className?: string;
 }
 export const Navbar = ({ className }: NavBarProps) => {
-  console.log(cls);
-
   return (
     <div className={classNames(cls.Navbar, {}, [className])}>
     

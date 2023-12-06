@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { classNames } from 'shared/lib/helpers/classNames/classNames';
-import './SideBar.scss';
+import cls from './SideBar.module.scss';
 import { Button } from 'shared/ui/Button/Button';
 import ThemeSwitcher from 'widgets/ThemeSwitcher/ui';
 interface SideBarProps {
@@ -13,10 +13,10 @@ export const SideBar = ({ className }: SideBarProps) => {
   };
 
   return (
-    <div className={classNames('SideBar', { ['collabsed']: collabsed }, [className])}>
+    <div className={classNames(cls.SideBar, { [cls.collabsed]: collabsed }, [className])}>
       <Button onClick={handleToggleClick}>toogle</Button>
       <div className="switchers">
-      <ThemeSwitcher />
+        <ThemeSwitcher />
       </div>
     </div>
   );
