@@ -9,13 +9,16 @@ import SideBar from 'widgets/SideBar';
 
 function App() {
   const { theme } = UseTheme();
+
   return (
     <div className={classNames('app', {}, [theme])}>
-      <Navbar />
-      <main className='main'>
-      <SideBar/>
-      <AppRouter />
-      </main>
+      <Suspense fallback="">
+        <Navbar />
+        <main className="main">
+          <SideBar />
+          <AppRouter />
+        </main>
+      </Suspense>
     </div>
   );
 }

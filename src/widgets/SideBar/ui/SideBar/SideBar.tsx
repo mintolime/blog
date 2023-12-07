@@ -3,6 +3,8 @@ import { classNames } from 'shared/lib/helpers/classNames/classNames';
 import cls from './SideBar.module.scss';
 import { Button } from 'shared/ui/Button/Button';
 import ThemeSwitcher from 'widgets/ThemeSwitcher/ui';
+import { LangSwitcher } from 'shared/ui/LangSwitcher/LangSwitcher';
+
 interface SideBarProps {
   className?: string;
 }
@@ -16,6 +18,7 @@ export const SideBar = ({ className }: SideBarProps) => {
     <div className={classNames(cls.SideBar, { [cls.collabsed]: collabsed }, [className])}>
       <Button onClick={handleToggleClick}>toogle</Button>
       <div className="switchers">
+        <LangSwitcher className={cls.lang} />
         <ThemeSwitcher />
       </div>
     </div>
