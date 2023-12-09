@@ -7,11 +7,13 @@ interface ApplinkProps extends LinkProps {
   className?: string;
 }
 export const Applink: FC <ApplinkProps> = (props) => {
-  const { className, to, children, ...otherProps } = props;
+    const {
+        className, to, children, ...otherProps
+    } = props;
 
-  return (
-    <Link to={to} className={classNames('Applink', {}, [className])} {...otherProps}>
-      {children}
-    </Link>
-  );
+    return (
+        <Link to={to} className={classNames('Applink', {}, [className])} {...otherProps}>
+            {children}
+        </Link>
+    );
 };

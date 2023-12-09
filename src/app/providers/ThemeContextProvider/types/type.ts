@@ -7,4 +7,4 @@ export interface ThemeContextProps {
   setTheme?:(theme:Theme) => void
 }
 
-export const LOCAL_STORAGE_THEME = "theme"
+export const LOCAL_STORAGE_THEME = 'theme';
