@@ -1,18 +1,19 @@
-.Button{
+.Button {
   cursor: pointer;
   border: none;
 }
-.clear{
+
+.clear {
   padding: 0;
   background: none;
 }
 
-.theme-switcher{
+.theme-switcher {
   background: var(--inverted-btn-color);
   border-radius: 10px;
 }
 
-.classic{
+.classic {
   width: 100px;
   height: 30px;
   background: var(--inverted-btn-color);
