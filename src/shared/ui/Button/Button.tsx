@@ -6,6 +6,7 @@ export enum ThemeButton {
   CLEAR = 'clear',
   SWITCH = 'theme-switcher',
   ClASSIC = 'classic',
+  TRANSPARENT = 'transparent'
 }
 interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   className?: string;

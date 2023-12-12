@@ -8,6 +8,13 @@
   background: none;
 }
 
+.transparent {
+  border: 2px #000 solid;
+  padding: 5px 15px;
+  background: none;
+  border-radius: 15px;
+}
+
 .theme-switcher {
   background: var(--inverted-btn-color);
   border-radius: 10px;
