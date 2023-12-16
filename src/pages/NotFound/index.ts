@@ -1,3 +1,3 @@
-import { NotFoundPageAsync } from './ui/NotFound.async';
+import NotFound from './ui/NotFound';
 
-export { NotFoundPageAsync as NotFoundPage };
+export { NotFound as NotFoundPage };
