@@ -25,6 +25,7 @@
     "@types/react-dom": "^17.0.11",
     "@types/react-router-dom": "^5.3.3",
     "@types/webpack": "^5.28.0",
+    "@types/webpack-bundle-analyzer": "^4.4.1",
     "@types/webpack-dev-server": "^4.7.2",
     "@types/jest": "^27.4.1",
     "@typescript-eslint/eslint-plugin": "^6.13.2",
@@ -54,7 +55,8 @@
     "typescript": "^5.3.3",
     "webpack": "^5.89.0",
     "webpack-cli": "^4.9.2",
-    "webpack-dev-server": "^4.7.4"
+    "webpack-dev-server": "^4.7.4",
+    "webpack-bundle-analyzer": "^4.5.0"
   },
   "dependencies": {
     "@types/react-i18next": "^8.1.0",
