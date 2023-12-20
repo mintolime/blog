@@ -37,5 +37,8 @@
       "module": "CommonJS",
       "strictNullChecks": true,
     }
-  }
+  },
+  "include": [
+    "./config/jest/setupTests.ts"
+  ],
 }
