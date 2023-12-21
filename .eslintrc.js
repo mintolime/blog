@@ -41,8 +41,17 @@ module.exports = {
         // 'i18next/no-literal-string': ['error', { markupOnly: true }],
         'i18next/no-literal-string': 'off',
         'linebreak-style': ['error', 'windows'],
+        'max-len': ['error', { ignoreComments: true, code: 100 }],
     },
     globals: {
         IS_DEV: true,
     },
+    overrides: [
+        {
+            files: ['**/src/**/*.test.{ts,tsx}'],
+            rules: {
+                'i18next/no-literal-string': 'off',
+            },
+        },
+    ],
 };

@@ -17,8 +17,15 @@ export const SideBar = ({ className }: SideBarProps) => {
     };
 
     return (
-        <div className={classNames(cls.SideBar, { [cls.collabsed]: collabsed }, [className])}>
-            <Button theme={ThemeButton.TRANSPARENT} onClick={handleToggleClick}>
+        <div
+            data-testid="sidebar"
+            className={classNames(cls.SideBar, { [cls.collabsed]: collabsed }, [className])}
+        >
+            <Button
+                data-testid="sidebar-toogle"
+                theme={ThemeButton.TRANSPARENT}
+                onClick={handleToggleClick}
+            >
                 {collabsed ? `${t('Показать')}` : `${t('Свернуть')}`}
             </Button>
             <div className={cls.switchers}>

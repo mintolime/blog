@@ -8,7 +8,7 @@ interface ErrorPageProps {
   className?: string;
 }
 export const ErrorPage = ({ className }: ErrorPageProps) => {
-    const { t } = useTranslation();
+    const { t } = useTranslation('button');
     // eslint-disable-next-line no-restricted-globals
     const toogleUpdate = () => location.reload();
     return (
