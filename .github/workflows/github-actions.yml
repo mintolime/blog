@@ -1,31 +1,40 @@
-name: Eslint,Jest,Storybook
-run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
+name: Eslint, Jest, Storybook
 on:
   push:
-    branches: [ main ]
+    branches: [main]
   pull_request:
-    branches: [ main ]
-    
+    branches: [main]
+
 jobs:
   pipeline:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node-version: [ 17.x, 18.x]
+        node-version: [17.x, 18.x]
     steps:
-      - uses: actions/checkout@v2
-      - name: Staring Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v1
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Setup Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
-      - name: install modules
+
+      - name: Install dependencies
         run: npm install
-      - name: build production project
+
+      - name: Build production project
         run: npm run build:prod
-      - name: linting typescript
+
+      - name: Linting TypeScript
         run: npm run lint:ts
-      - name: linting css
+
+      - name: Linting CSS
         run: npm run lint:scss
-      - name: unit testing
+
+      - name: Unit testing
         run: npm run test:unit
-      - name: build storybook
+
+      - name: Build Storybook
+        run: npm run build:storybook
+
