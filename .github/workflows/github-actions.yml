@@ -1,17 +1,17 @@
 name: Eslint,Jest,Storybook
 run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
-on: 
-push:
-  branches : [ main ]
-pull_request:
-    branches : [ main ]
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+    
 jobs:
-  GitHub-Testing-UI:
+  pipeline:
     runs-on: ubuntu-latest
     strategy:
-    matrix:
-    node-version: [ 17.x, 18.x]
-
+      matrix:
+        node-version: [ 17.x, 18.x]
     steps:
       - uses: actions/checkout@v2
       - name: Staring Node.js ${{ matrix.node-version }}
