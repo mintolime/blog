@@ -6,7 +6,7 @@ on:
     branches: [main]
 
 jobs:
-  pipeline:
+  main-scripts:
     runs-on: ubuntu-latest
     strategy:
       matrix:
@@ -24,7 +24,7 @@ jobs:
         run: npm install
 
       - name: Build production project
-        run: npm run build:prod
+        run: npm run build:dev
 
       - name: Linting TypeScript
         run: npm run lint:ts
