@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node-version: [17.x, 18.x]
+        node-version: [18.x]
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
@@ -34,7 +34,4 @@ jobs:
 
       - name: Unit testing
         run: npm run test:unit
-
-      - name: Build Storybook
-        run: npm run build:storybook
 
