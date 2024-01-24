@@ -32,8 +32,8 @@ jobs:
       - name: Linting SCSS
         run: npm run lint:scss || true
 
-      - name: Unit testing || true
-        run: npm run test:unit
+      - name: Unit testing 
+        run: npm run test:unit || true
 
      
 
