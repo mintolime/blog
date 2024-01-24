@@ -1,5 +1,7 @@
 # Проект "Сайт Блог"
 
+[![Eslint, Jest, Storybook](https://github.com/mintolime/blog/actions/workflows/github-actions.yml/badge.svg)](https://github.com/mintolime/blog/actions/workflows/github-actions.yml)
+
 ## Описание
 
 Этот проект представляет собой веб-сайт блога, разработанный с использованием современных технологий. Проект включает в себя функциональности для разработки, сборки, тестирования и запуска веб-приложения.
