@@ -18,8 +18,7 @@ jobs:
           path: |
             node_modules
           key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
-          restore-keys: |
-            ${{ runner.os }}-node-
+          action: delete
 
       - name: Checkout code
         uses: actions/checkout@v2
@@ -43,3 +42,6 @@ jobs:
 
       - name: Unit testing 
         run: npm run test:unit || true
+        
+      - name: Clear Node Modules
+        run: rm -rf node_modules
