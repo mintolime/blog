@@ -12,6 +12,14 @@ jobs:
       matrix:
         node-version: [18.x]
     steps:
+      - name: Clear Cache
+        uses: actions/cache@v2
+        with:
+          path: |
+            node_modules
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          action: delete
+
       - name: Checkout code
         uses: actions/checkout@v2
 
@@ -33,7 +41,4 @@ jobs:
         run: npm run lint:scss || true
 
       - name: Unit testing 
-        run: npm run test:unit || true
-
-     
-
+        run: npm run test:unit 
