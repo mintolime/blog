@@ -6,7 +6,7 @@ on:
     branches: [main]
 
 jobs:
-  pipeline:
+  CI/CD:
     runs-on: ubuntu-latest
     strategy:
       matrix:
@@ -34,3 +34,8 @@ jobs:
 
       - name: Unit testing 
         run: npm run test:unit
+
+      - name: Storybook build 
+        run: npm run build-storybook
+      - name: Screenshoot testing 
+        run: npm run test:ui:ci
