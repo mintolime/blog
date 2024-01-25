@@ -38,7 +38,7 @@ module.exports = {
         'no-underscore-dangle': 'off',
         // 'i18next/no-literal-string': ['error', { markupOnly: true }],
         'i18next/no-literal-string': 'off',
-        'linebreak-style': ['error', 'windows'],
+        'linebreak-style': ['warn', 'windows'],
         'max-len': ['error', { ignoreComments: true, code: 100 }],
     },
     globals: {
