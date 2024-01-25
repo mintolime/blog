@@ -6,7 +6,7 @@ on:
     branches: [main]
 
 jobs:
-  CI/CD:
+  CI-CD:
     runs-on: ubuntu-latest
     strategy:
       matrix:
