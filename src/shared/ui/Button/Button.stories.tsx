@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import { themeDecorator } from 'shared/config/storybook/themeDecorator';
 import { Theme } from 'app/providers/ThemeContextProvider/types/type';
-import { Button, ThemeButton } from './Button';
+import { Button, SizeButton, ThemeButton } from './Button';
 
 const meta = {
     title: 'shared/Button',
@@ -31,5 +31,12 @@ export const Warm: Story = {
     args: {
         children: 'text',
         theme: ThemeButton.WARNING,
+    },
+};
+
+export const SizeL: Story = {
+    args: {
+        children: 'text',
+        size: SizeButton.L,
     },
 };

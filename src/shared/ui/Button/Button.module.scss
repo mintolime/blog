@@ -1,6 +1,7 @@
 .Button {
   cursor: pointer;
   border: none;
+  padding: 5px 15px;
 }
 
 .clear {
@@ -36,3 +37,22 @@
   border-radius: 10px;
   background-color: var(--warning-color);
 }
+
+.size_m {
+  width: var(--btn-size-m);
+  padding: 0;
+  height: var(--btn-size-m);
+}
+
+.size_l {
+  width: var(--btn-size-l);
+  height: var(--btn-size-l);
+  padding: 0;
+}
+
+.size_xl {
+  width: var(--btn-size-xl);
+  height: var(--btn-size-l);
+  padding: 0;
+}
+
