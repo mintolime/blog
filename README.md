@@ -1,6 +1,6 @@
 # Проект "Сайт Блог"
 
-[![Eslint, Jest, Storybook](https://github.com/mintolime/blog/actions/workflows/github-actions.yml/badge.svg)](https://github.com/mintolime/blog/actions/workflows/github-actions.yml)
+[![Eslint, Jest, Storybook UI](https://github.com/mintolime/blog/actions/workflows/github-actions.yml/badge.svg)](https://github.com/mintolime/blog/actions/workflows/github-actions.yml)
 
 ## Описание
 
