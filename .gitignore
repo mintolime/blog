@@ -3,3 +3,5 @@
 node_modules
 .idea
 .vscode/
+.loki/report.html
+.loki/report.json
