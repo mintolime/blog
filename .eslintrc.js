@@ -40,6 +40,8 @@ module.exports = {
         'i18next/no-literal-string': 'off',
         'linebreak-style': ['warn', 'windows'],
         'max-len': ['error', { ignoreComments: true, code: 100 }],
+        'jsx-a11y/no-static-element-interactions': 'off',
+        'jsx-a11y/click-events-have-key-events': 'off',
     },
     globals: {
         IS_DEV: true,
