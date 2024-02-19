@@ -1,5 +1,5 @@
 import React, {
-    ReactNode, useCallback, useEffect, useRef, useState,
+    ReactNode, useCallback, useEffect,
 } from 'react';
 import { classNames } from 'shared/lib/helpers/classNames/classNames';
 import cls from './Modal.module.scss';
@@ -25,11 +25,11 @@ export const Modal = (props: ModalProps) => {
     };
 
     // функция закрытия окна
-    const closeHandler = () => {
+    const closeHandler = useCallback(() => {
         if (onClose) {
             onClose();
         }
-    };
+    }, [onClose]);
     // функция закрытия окна по кнопке Esc
     const onKeyClose = useCallback((evt:KeyboardEvent) => {
         if (evt.key === 'Escape') {
