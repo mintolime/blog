@@ -8,7 +8,7 @@ interface NewsProps {
 }
 
 const News: React.FC<NewsProps> = ({ className }) => {
-    const { t } = useTranslation();
+    const { t } = useTranslation('translation');
     return (
         <div className={classNames(cls.News, {}, [className])}>
             <p className={cls.info}>{t('Новости')}</p>

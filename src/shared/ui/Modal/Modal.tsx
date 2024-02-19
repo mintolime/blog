@@ -3,6 +3,7 @@ import React, {
 } from 'react';
 import { classNames } from 'shared/lib/helpers/classNames/classNames';
 import cls from './Modal.module.scss';
+import { Portal } from '../Portal/Portal';
 
 interface ModalProps {
   className?: string;
@@ -44,15 +45,18 @@ export const Modal = (props: ModalProps) => {
         return () => {
             window.removeEventListener('keydown', onKeyClose);
         };
-    }, [onKeyClose]);
+    }, [isOpen, onKeyClose]);
 
     return (
-        <div className={classNames(cls.Modal, mods, [className])}>
-            <div className={cls.overlay} onClick={closeHandler}>
-                <div className={cls.content} onClick={onContentCLick}>
-                    {children}
+        <Portal>
+            <div className={classNames(cls.Modal, mods, [className])}>
+                <div className={cls.overlay} onClick={closeHandler}>
+                    <div className={cls.content} onClick={onContentCLick}>
+                        {children}
+                    </div>
                 </div>
             </div>
-        </div>
+        </Portal>
+
     );
 };
