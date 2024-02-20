@@ -1,6 +1,6 @@
-@import './variables/global';
-@import './themes/dark';
-@import './themes/normal';
+@import "./variables/global";
+@import "./themes/dark";
+@import "./themes/normal";
 
 body {
   width: 100%;
@@ -8,6 +8,7 @@ body {
   background: var(--bg-color);
   color: var(--primary-color);
 }
+
 .app {
   min-height: 100vh;
 }
